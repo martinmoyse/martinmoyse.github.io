@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" />
-   <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" />     
-  <link rel="stylesheet" href="../main.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous" />     
+      <link rel="stylesheet" href="../main.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-    * {
-        font-family: 'Poppins', sans-serif;
-    }
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
 
-    img {
-        height: 280px;
-    }
+        img {
+            height: 280px;
+        }
 
-    body {
-        background: hsl(0, 0, 94%);
-    }
-</style>
+        body {
+            background: hsl(0, 0, 94%);
+        }
+    </style>
+    <meta name="description" content="This is landing page of my recipe website">
+    <title>vkusno.bg - сайт за кулинарни рецепти</title>
+    <meta property="og:title" content="vkusno.bg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://martinmoyse/martinmoyse.github.io" />
+    <meta property="og:image" content="../assets/foods.jpeg" />
   </head>
 <body>
 
           <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">vkusno.bg</a>
+              <a title="my-landing-page" class="navbar-brand" href="index.html">vkusno.bg</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -44,32 +50,32 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Начало</a>
+                      <a title="my-landing-page" class="nav-link active" aria-current="page" href="index.html">Начало</a>
                     </li>
                     
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a title="recipe-categories" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Категории рецепти
                       </a>
                       <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="vegetarian.html">Вегетариански</a></li>
-                        <li><a class="dropdown-item" href="vegan.html">Веган</a></li>
-                        <li><a class="dropdown-item" href="keto.html">Кето</a></li>
-                        <li><a class="dropdown-item" href="salads.html">Салати</a></li>
+                        <li><a title="vegetarian-recipes" class="dropdown-item" href="vegetarian.html">Вегетариански</a></li>
+                        <li><a class="vegan-recipes" href="vegan.html">Веган</a></li>
+                        <li><a class="keto-recipes" href="keto.html">Кето</a></li>
+                        <li><a class="salad-recipes" href="salads.html">Салати</a></li>
                         <li>
                           <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="add_recipe.html">Добави рецепта</a></li>
+                        <li><a title="add-recipe" class="dropdown-item" href="add_recipe.html">Добави рецепта</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="macros.html">Макроси</a>
+                      <a title="macros-page" class="nav-link" href="macros.html">Макроси</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="terms_and_conditions.html">Условия за ползване</a>
+                      <a title="terms-and-conditions-page" class="nav-link" href="terms_and_conditions.html">Условия за ползване</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="data_protection.html">Защита на данните</a>
+                      <a class="data-protection-page" href="data_protection.html">Защита на данните</a>
                     </li>
                   </ul>
                   <form class="d-flex mt-3" role="search">
@@ -91,8 +97,8 @@
                 <div class="owl-carousel owl-theme">
                     <div class="item mb-4">
                         <div class="card border-0 shadow">
-                          <a href="recipe1.html">
-                            <img src="../assets/1.jpg" alt="" class="card-img-top">
+                          <a title="pumpkin-soup-recipe" href="recipe1.html">
+                            <img src="../assets/1.jpg" alt="pumpkin-soup" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>Тиквена супа</h4>
@@ -104,8 +110,8 @@
 
                     <div class="item">
                         <div class="card border-0 shadow">
-                          <a href="recipe2.html">
-                            <img src="../assets/2.jpg" alt="" class="card-img-top">
+                          <a title="oatmeal-recipe" href="recipe2.html">
+                            <img src="../assets/2.jpg" alt="oatmeal" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center text-decoration-none">
                                     <h4 text-decoration-none>Овесени ядки</h4>
@@ -117,8 +123,8 @@
                     </div>
                     <div class="item">
                         <div class="card border-0 shadow">
-                          <a href="recipe3.html">
-                            <img src="../assets/3.jpg" alt="" class="card-img-top">
+                          <a title="germ-salad-recipe" href="recipe3.html">
+                            <img src="../assets/3.jpg" alt="germ-salad" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>Салата с кълнове</h4>
@@ -130,8 +136,8 @@
                     </div>
                     <div class="item">
                         <div class="card border-0 shadow">
-                          <a href="recipe4.html">
-                            <img src="../assets/4.jpg" alt="" class="card-img-top">
+                          <a title="pumpkin-mint-sandwich-recipe" href="recipe4.html">
+                            <img src="../assets/4.jpg" alt="pumpkin-mint-sandwich" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>Сандвичи с праскова и мента</h4>
@@ -142,8 +148,8 @@
                     </div>
                     <div class="item">
                         <div class="card border-0 shadow">
-                          <a href="recipe5.html">
-                            <img src="../assets/5.jpg" alt="" class="card-img-top">
+                          <a title="gluten-free-biscuits-recipe" href="recipe5.html">
+                            <img src="../assets/5.jpg" alt="gluten-free-biscuits" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>Безглутенови бисквитки</h4>
@@ -154,8 +160,8 @@
                     </div>
                     <div class="item">
                         <div class="card border-0 shadow">
-                          <a href="recipe6.html">
-                            <img src="../assets/6.jpg" alt="" class="card-img-top">
+                          <a title="fish-filet-in-leek-brine-recipe" href="recipe6.html">
+                            <img src="../assets/6.jpg" alt="fish-filet-in-leek-brine" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>Рибно филе в марината от праз</h4>
@@ -166,8 +172,8 @@
                     </div>
                     <div class="item">
                       <div class="card border-0 shadow">
-                        <a href="recipe7.html">
-                          <img src="../assets/7.jpg" alt="" class="card-img-top">
+                        <a title="vietnamese-tofu-recipe" href="recipe7.html">
+                          <img src="../assets/7.jpg" alt="vietnamese-tofu" class="card-img-top">
                           <div class="card-body">
                               <div class="card-title text-center">
                                   <h4>Тофу по виетнамска рецепта</h4>
@@ -221,15 +227,16 @@
   </div>
 
   <div class="media">
-    <div class="media-body">
+    <div class="media-body mt-2">
       <h5 class="mt-0">Нашата селекция от рецепти съдържа ястия от цял свят</h5>
-      От класически ястия до екзотична чуждестранна кухня - всяка рецепта съдържа подробни и лесни за следване стъпки, както и списък на необходимите продукти.
-      Независимо дали си опитен кулинар или начинаещ, тук ще развиеш своите кулинарни умения и ще споделиш радостта от добрата храна със своите близки.
+      <p>класически ястия до екзотична чуждестранна кухня - всяка рецепта съдържа подробни и лесни за следване стъпки, както и списък на необходимите продукти.
+        Независимо дали си опитен кулинар или начинаещ, тук ще развиеш своите кулинарни умения и ще споделиш радостта от добрата храна със своите близки.</p>
+      <p>Открийте правилната за Вас рецепта, използвайки категориите на сайта ни - кето, веган, вегетариански и много други.</p>
       <div class="media mt-3">
         <div class="media-body">
           <h5 class="mt-0">Ние вярваме, че правилното хранене е най-доброто лекарство</h5>
-          На нашия сайт ще намерите полезна информация и съвети как да постигнете балансирана диета. 
-          В раздел макроси може да намерите хранителна информация за вашите любими продукти, както и за конкретни рецепти. 
+          <p>На нашия сайт ще намерите полезна информация и съвети как да постигнете балансирана диета. 
+            В раздел макроси може да намерите хранителна информация за вашите любими продукти, както и за конкретни рецепти.</p> 
         </div>
       </div>
     </div>
@@ -248,7 +255,7 @@
     <img src="../assets/landing-page-food-photo.jpg" class="card-img" alt="Responsive image">
 
 
-    <div class="media d-flex mx-auto mt-5 mb-5 w-75">
+    <div class="media d-flex mx-auto mt-5 mb-5 w-50">
       <div class="media-body">
         <h5 class="mt-0">Сподели страстта си към кулинарията с нас!</h5>
         <p>Не се храним, за да живеем. Живеем, за да се храним. Ако си съгласен с нашата философия, сега можеш да добавиш своите любими рецепти на нашия сайт.
