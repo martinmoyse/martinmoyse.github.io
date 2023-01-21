@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+   <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />     
+  <link rel="stylesheet" href="../main.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    img {
+        height: 280px;
+    }
+
+    body {
+        background: hsl(0, 0, 94%);
+    }
+</style>
+  </head>
+<body>
+
+          <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">vkusno.bg</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">vkusno.bg</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Начало</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Категории рецепти
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="vegetarian.html">Вегетариански</a></li>
+                        <li><a class="dropdown-item" href="vegan.html">Веган</a></li>
+                        <li><a class="dropdown-item" href="keto.html">Кето</a></li>
+                        <li><a class="dropdown-item" href="salads.html">Салати</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="add_recipe.html">Добави рецепта</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="macros.html">Макроси</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="terms_and_conditions.html">Условия за ползване</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="data_protection.html">Защита на данните</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Въведи рецепта или продукти" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Търсене</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+<body>
+
+    <div class="container-fluid my-5">
+      <br><br>
+        <h1 class="text-center text-fw-bold display-3 mb-5">Избрани рецепти</h1>
+        <div class="row">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    <div class="item mb-4">
+                        <div class="card border-0 shadow">
+                          <a href="recipe1.html">
+                            <img src="../assets/1.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Тиквена супа</h4>
+                                </div>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                          <a href="recipe2.html">
+                            <img src="../assets/2.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center text-decoration-none">
+                                    <h4 text-decoration-none>Овесени ядки</h4>
+                                </div>
+                            </div>
+                          </a>
+              
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                          <a href="recipe3.html">
+                            <img src="../assets/3.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Салата с кълнове</h4>
+                                </div>
+                            </div>
+                          </a>
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                          <a href="recipe4.html">
+                            <img src="../assets/4.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Сандвичи с праскова и мента</h4>
+                                </div>
+                            </div>
+                          </a>  
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                          <a href="recipe5.html">
+                            <img src="../assets/5.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Безглутенови бисквитки</h4>
+                                </div>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                          <a href="recipe6.html">
+                            <img src="../assets/6.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>Рибно филе в марината от праз</h4>
+                                </div>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                      <div class="card border-0 shadow">
+                        <a href="recipe7.html">
+                          <img src="../assets/7.jpg" alt="" class="card-img-top">
+                          <div class="card-body">
+                              <div class="card-title text-center">
+                                  <h4>Тофу по виетнамска рецепта</h4>
+                              </div>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+
+<div class="d-flex justify-content-center w-75 mx-auto">
+  <div class="jumbotron mx-5">
+    <h1 class="display-4">Добре дошли!</h1>
+    <p class="lead">Ние сме екип от опитни кулинари, посветени на добрата храна, а мисията ни е да я споделим с вас.</p>
+   
+    <p>Всяка рецепта, която ще намерите тук, е внимателно подбрана и изпитана.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Към рецептите</a>
+    </p>
+  </div>
+
+  <div class="media">
+    <div class="media-body">
+      <h5 class="mt-0">Нашата селекция от рецепти съдържа ястия от цял свят</h5>
+      От класически ястия до екзотична чуждестранна кухня - всяка рецепта съдържа подробни и лесни за следване стъпки, както и списък на необходимите продукти.
+      Независимо дали си опитен кулинар или начинаещ, тук ще развиеш своите кулинарни умения и ще споделиш радостта от добрата храна със своите близки.
+      <div class="media mt-3">
+        <div class="media-body">
+          <h5 class="mt-0">Ние вярваме, че правилното хранене е най-доброто лекарство</h5>
+          На нашия сайт ще намерите полезна информация и съвети как да постигнете балансирана диета. 
+          В раздел макроси може да намерите хранителна информация за вашите любими продукти, както и за конкретни рецепти. 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+
+      <h2 class="d-flex justify-content-center mt-5 mb-5">Опитайте нашите вкусни и здравословни рецепти!</h2>
+
+    
+
+    
+
+    <img src="../assets/landing-page-food-photo.jpg" class="card-img" alt="Responsive image">
+
+
+    <div class="media d-flex mx-auto mt-5 mb-5 w-75">
+      <div class="media-body">
+        <h5 class="mt-0">Сподели страстта си към кулинарията с нас!</h5>
+        <p>Не се храним, за да живеем. Живеем, за да се храним. Ако си съгласен с нашата философия, сега можеш да добавиш своите любими рецепти на нашия сайт.
+        Нашите професионални готвачи ще разгледат и изпитат внимателно всяка споделена рецепта.</p>
+        <p>Нуждаем се от твоята помощ, за да съберем най-добрите рецепти на едно място! </p>
+          <a href="add_recipe.html">
+            <button type="button" class="btn btn-warning">Добави рецепта</button>
+          </a>
+      </div>
+    </div>
+
+    <div class="alert alert-secondary mt-5" role="alert">
+      <h4 class="alert-heading">vkusno.bg</h4>
+      <p>Copyright ©</p>
+      <hr>
+      <p class="mb-0">Contact us at contact@vkusno.bg.</p>
+    </div>
+</body>
+</html>
